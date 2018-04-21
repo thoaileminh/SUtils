@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
     SUtils.animImageZoomOut(this, ivYourImage)
 
 
-//JsonHelper-------------------------------------------------------------------------------
+//ApiHelper-------------------------------------------------------------------------------
     //check key of value String is exits into json or not, if not return null
     var myStr = SUtils.checkKeyStringExits(yourJson, "yourKey")
 
