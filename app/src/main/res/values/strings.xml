@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">SUtils</string>
+
+    <!-- SnackBar -->
+    <string name="try_again">TRY AGIAN</string>
+    <string name="action_setting">SETTING</string>
+    <string name="internet_error">Internet connect lost!</string>
+
+    <!-- Lasted Time -->
+    <string name="str_time_just_now">vài giây trước</string>
+    <string name="str_time_minute">&#160;phút trước</string>
+    <string name="str_time_1_minute">1 phút trước</string>
+    <string name="str_time_hour">&#160;giờ trước</string>
+    <string name="str_time_1_hour">1 giờ trước</string>
+    <string name="str_time_yesterday">Hôm qua</string>
+    <string name="str_time_tomorrow">&#160;ngày mai</string>
+    <string name="str_time_lastweek">1 tuần trước</string>
+    <string name="str_time_2_week_ago">2 tuần trước</string>
+    <string name="str_time_3_week_ago">3 tuần trước</string>
+    <string name="str_time_lastmonth">1 tháng trước</string>
+    <string name="str_month">&#160;tháng&#160;</string>
+    <string name="str_year">&#160;năm&#160;</string>
+    <string name="str_moment">,&#160;</string>
+
+    <string name="str_month_1">Jan</string>
+    <string name="str_month_2">Feb</string>
+    <string name="str_month_3">Mar</string>
+    <string name="str_month_4">Apr</string>
+    <string name="str_month_5">May</string>
+    <string name="str_month_6">Jun</string>
+    <string name="str_month_7">Jul</string>
+    <string name="str_month_8">Aug</string>
+    <string name="str_month_9">Sep</string>
+    <string name="str_month_10">Oct</string>
+    <string name="str_month_11">Nov</string>
+    <string name="str_month_12">Dec</string>
+</resources>
