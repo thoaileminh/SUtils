@@ -23,8 +23,8 @@ allprojects {
 
 ```gradle
 dependencies {
-    implementation 'com.github.thoaileminh:SUtils:3.0'
-    //or compile 'com.github.thoaileminh:SUtils:3.0'
+    implementation 'com.github.thoaileminh:SUtils:15'
+    //or compile 'com.github.thoaileminh:SUtils:15'
 }
 ```
 

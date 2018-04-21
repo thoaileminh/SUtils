@@ -14,8 +14,8 @@ android {
         //applicationId "com.storm.utils"
         minSdkVersion 14
         targetSdkVersion 27
-        versionCode 3
-        versionName "3.0"
+        versionCode 15
+        versionName "15"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
