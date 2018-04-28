@@ -5,7 +5,7 @@ An Utility for Android applications (4.0+).
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 
-## How to use SUtils
+## How to use and install SUtils
 
 ##### Step 1. Add the JitPack repository to your build file
 Add this in your root `build.gradle` file (**not** your app `build.gradle` file):
@@ -108,7 +108,7 @@ class MainActivity : AppCompatActivity() {
     var bitmap = SUtils.getRealBitmapOrientation(yourBitmap, yourImagePath)
     
     //get bitmap rotate image with degrees
-    var bitmap = SUtils.getBitmapRotateImage(yourBitmap, 190)
+    var bitmap = SUtils.getBitmapRotateImage(yourBitmap, 180)
    
     //get URI from image file local
     var uri = SUtils.getUriFromImageFile(this, yourImageFile)
