@@ -1,6 +1,4 @@
 <resources>
-    <string name="app_name">SUtils</string>
-
     <!-- SnackBar -->
     <string name="try_again">THỬ LẠI</string>
     <string name="action_setting">CÀI ĐẶT</string>
