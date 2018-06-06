@@ -1,4 +1,3 @@
-//apply plugin: 'com.android.application'
 apply plugin: 'com.android.library'
 
 apply plugin: 'kotlin-android'
@@ -10,14 +9,15 @@ group = 'com.github.thoaileminh'
 
 android {
     compileSdkVersion 27
+
     defaultConfig {
-        //applicationId "com.storm.utils"
         minSdkVersion 14
         targetSdkVersion 27
-        versionCode 16
-        versionName "16"
+        versionCode 17
+        versionName "17"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -65,10 +65,12 @@ artifacts {
 }
 
 // uncomment to build a jar file in addition to the default aar file
-//android.libraryVariants.all { variant ->
-//    def name = variant.buildType.name
-//    def task = project.tasks.create "jar${name.capitalize()}", Jar
-//    task.dependsOn variant.javaCompile
-//    task.from variant.javaCompile.destinationDir
-//    artifacts.add('archives', task);
-//}
+/*
+android.libraryVariants.all { variant ->
+    def name = variant.buildType.name
+    def task = project.tasks.create "jar${name.capitalize()}", Jar
+    task.dependsOn variant.javaCompile
+    task.from variant.javaCompile.destinationDir
+    artifacts.add('archives', task);
+}
+*/

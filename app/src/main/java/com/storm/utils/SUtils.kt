@@ -17,9 +17,9 @@ import java.math.BigDecimal
 import java.text.NumberFormat
 
 /**
- * @auth THOẠI ĐẠI CA
- * @date 20/04/2018
- **/
+ *  @author thoaileminh
+ *  @date 20/04/2018
+ */
 
 class SUtils {
     companion object {
@@ -51,6 +51,20 @@ class SUtils {
          */
         fun checkKeyIntExits(json: JSONObject, key: String): Int {
             return ApiHelper.checkKeyIntExits(json, key)
+        }
+
+        /**
+         * check key of value Long is exits into json or not, if not return 0
+         */
+        fun checkKeyLongExits(json: JSONObject, key: String): Long {
+            return ApiHelper.checkKeyLongExits(json, key)
+        }
+
+        /**
+         * check key of value Double is exits into json or not, if not return 0
+         */
+        fun checkKeyDoubleExits(json: JSONObject, key: String): Double {
+            return ApiHelper.checkKeyDoubleExits(json, key)
         }
 
         /**
@@ -369,7 +383,7 @@ class SUtils {
 
 
         /**
-         *  OtherHelper-----------------------------------------------------------------------------
+         *  Helper-----------------------------------------------------------------------------
          */
 
         /**
@@ -377,6 +391,20 @@ class SUtils {
          */
         fun formatBigDecimalToCurrency(bigDecimal: BigDecimal): String {
             return NumberFormat.getNumberInstance(java.util.Locale.US).format(bigDecimal)
+        }
+
+        /**
+         *  format Int to currency
+         */
+        fun formatIntToCurrency(int: Int): String {
+            return NumberFormat.getNumberInstance(java.util.Locale.US).format(int)
+        }
+
+        /**
+         *  format Long to currency
+         */
+        fun formatLongToCurrency(long: Long): String {
+            return NumberFormat.getNumberInstance(java.util.Locale.US).format(long)
         }
     }
 }

@@ -9,9 +9,9 @@ import android.webkit.WebView
 import android.widget.TextView
 
 /**
- * @auth THOẠI ĐẠI CA
- * @date 20/04/2018
- **/
+ *  @author thoaileminh
+ *  @date 20/04/2018
+ */
 
 /**
  * class load data HTML

@@ -1,23 +1,23 @@
 <resources>
     <!-- SnackBar -->
-    <string name="try_again">THỬ LẠI</string>
-    <string name="action_setting">CÀI ĐẶT</string>
-    <string name="internet_error">Mất kết nối internet!</string>
+    <string name="str_try_again">THỬ LẠI</string>
+    <string name="str_action_setting">CÀI ĐẶT</string>
+    <string name="str_internet_error">Mất kết nối internet!</string>
 
     <!-- Lasted Time -->
-    <string name="str_time_just_now">sec ago</string>
-    <string name="str_time_minute">&#160;min ago</string>
-    <string name="str_time_1_minute">1 min ago</string>
-    <string name="str_time_hour">&#160;hour ago</string>
-    <string name="str_time_1_hour">1 hour ago</string>
-    <string name="str_time_yesterday">Yesterday</string>
+    <string name="str_time_just_now">vài giây trước</string>
+    <string name="str_time_minute">&#160;phút trước</string>
+    <string name="str_time_1_minute">1 phút trước</string>
+    <string name="str_time_hour">&#160;giờ trước</string>
+    <string name="str_time_1_hour">1 giờ trước</string>
+    <string name="str_time_yesterday">Hôm qua</string>
     <string name="str_time_tomorrow">&#160;ngày mai</string>
-    <string name="str_time_lastweek">1 week ago</string>
-    <string name="str_time_2_week_ago">2 week ago</string>
-    <string name="str_time_3_week_ago">3 week ago</string>
-    <string name="str_time_lastmonth">1 month ago</string>
-    <string name="str_month">&#160;month&#160;</string>
-    <string name="str_year">&#160;year&#160;</string>
+    <string name="str_time_lastweek">1 tuần trước</string>
+    <string name="str_time_2_week_ago">2 tuần trước</string>
+    <string name="str_time_3_week_ago">3 tuần trước</string>
+    <string name="str_time_lastmonth">1 tháng trước</string>
+    <string name="str_month">&#160;tháng&#160;</string>
+    <string name="str_year">&#160;năm&#160;</string>
     <string name="str_moment">,&#160;</string>
 
     <string name="str_month_1">Th1</string>

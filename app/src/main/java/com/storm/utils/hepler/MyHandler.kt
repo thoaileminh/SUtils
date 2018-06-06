@@ -4,8 +4,8 @@ import android.os.Handler
 import android.os.Looper
 
 /**
- * @auth THOẠI ĐẠI CA
- * @date 20/04/2018
- **/
+ *  @author thoaileminh
+ *  @date 20/04/2018
+ */
 
 class MyHandler : Handler(Looper.getMainLooper())

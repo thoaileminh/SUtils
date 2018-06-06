@@ -9,16 +9,16 @@ import java.security.MessageDigest
 import java.security.NoSuchAlgorithmException
 
 /**
- * @auth THOẠI ĐẠI CA
- * @date 20/04/2018
- **/
+ *  @author thoaileminh
+ *  @date 20/04/2018
+ */
 
 /**
  * class handle Facebook SDK
  */
 class FacebookHelper {
     companion object {
-        private const val tag: String = "[AnimationHelper] "
+        private const val tag: String = "[FacebookHelper] "
 
         /**
          *  get keyHash for longIn facebook

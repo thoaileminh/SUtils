@@ -4,8 +4,8 @@ import org.json.JSONObject
 import java.math.BigDecimal
 
 /**
- * @auth THOẠI ĐẠI CA
- * @date 20/04/2018
+ *  @author thoaileminh
+ *  @date 20/04/2018
  */
 
 /**
@@ -31,6 +31,24 @@ class ApiHelper {
             if (!json.isNull(key))
                 return json.getInt(key)
             return 0
+        }
+
+        /**
+         * check key of value Long is exits into json or not, if not return 0
+         */
+        fun checkKeyLongExits(json: JSONObject, key: String): Long {
+            if (!json.isNull(key))
+                return json.getLong(key)
+            return 0
+        }
+
+        /**
+         * check key of value Double is exits into json or not, if not return 0
+         */
+        fun checkKeyDoubleExits(json: JSONObject, key: String): Double {
+            if (!json.isNull(key))
+                return json.getDouble(key)
+            return 0.0
         }
 
         /**

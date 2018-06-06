@@ -9,9 +9,9 @@ import android.view.inputmethod.InputMethodManager
 import com.storm.utils.SUtils
 
 /**
- * @auth THOẠI ĐẠI CA
- * @date 20/04/2018
- **/
+ *  @author thoaileminh
+ *  @date 20/04/2018
+ */
 
 /**
  * class handel event of OS

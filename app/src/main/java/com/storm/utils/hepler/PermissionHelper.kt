@@ -5,9 +5,9 @@ import android.content.pm.PackageManager
 import android.support.v4.content.ContextCompat
 
 /**
- * @auth THOẠI ĐẠI CA
- * @date 20/04/2018
- **/
+ *  @author thoaileminh
+ *  @date 20/04/2018
+ */
 
 /**
  * class handle permission

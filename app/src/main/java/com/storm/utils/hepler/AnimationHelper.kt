@@ -6,8 +6,8 @@ import android.view.animation.AnimationUtils
 import com.storm.utils.R
 
 /**
- *  THOẠI ĐẠI CA
- *  20/04/2018
+ *  @author thoaileminh
+ *  @date 20/04/2018
  */
 
 /**

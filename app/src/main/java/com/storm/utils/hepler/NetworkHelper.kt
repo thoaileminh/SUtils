@@ -2,6 +2,7 @@ package com.storm.utils.hepler
 
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
 import android.net.ConnectivityManager
 import android.provider.Settings
 import android.support.design.widget.Snackbar
@@ -9,9 +10,9 @@ import android.view.View
 import com.storm.utils.R
 
 /**
- * @auth THOẠI ĐẠI CA
- * @date 20/04/2018
- **/
+ *  @author thoaileminh
+ *  @date 20/04/2018
+ */
 
 /**
  * check network connection
@@ -28,9 +29,9 @@ class NetworkHelper {
             val networkInfo = cm.activeNetworkInfo
 
             val snackBar: Snackbar? = if (indefinite)
-                initSnackBar(context, view, context.resources.getString(R.string.internet_error), Snackbar.LENGTH_INDEFINITE)
+                initSnackBar(context, view, context.resources.getString(R.string.str_internet_error), Snackbar.LENGTH_INDEFINITE)
             else
-                initSnackBar(context, view, context.resources.getString(R.string.internet_error), Snackbar.LENGTH_LONG)
+                initSnackBar(context, view, context.resources.getString(R.string.str_internet_error), Snackbar.LENGTH_LONG)
 
             return if (networkInfo != null && networkInfo.isConnected) {
                 snackBar!!.dismiss()
@@ -46,9 +47,9 @@ class NetworkHelper {
          */
         private fun initSnackBar(context: Context, view: View, message: String, duration: Int): Snackbar {
             val snackBar = Snackbar.make(view, message, duration)
-            snackBar.setActionTextColor(context.resources.getColor(R.color.green))
-            // set action mở cài đặt
-            snackBar.setAction(context.resources.getString(R.string.action_setting)) {
+            snackBar.setActionTextColor(Color.parseColor("#70C063"))
+            // set action open setting
+            snackBar.setAction(context.resources.getString(R.string.str_action_setting)) {
                 context.startActivity(Intent(Settings.ACTION_SETTINGS))
             }
 
