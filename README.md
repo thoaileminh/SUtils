@@ -23,8 +23,8 @@ allprojects {
 
 ```gradle
 dependencies {
-    implementation 'com.github.thoaileminh:SUtils:16'
-    //or compile 'com.github.thoaileminh:SUtils:16'
+    implementation 'com.github.thoaileminh:SUtils:17'
+    //or compile 'com.github.thoaileminh:SUtils:17'
 }
 ```
 
@@ -58,28 +58,40 @@ class MainActivity : AppCompatActivity() {
 
 //ApiHelper-------------------------------------------------------------------------------
     //check key of value String is exits into json or not, if not return null
-    var myStr = SUtils.checkKeyStringExits(yourJson, "yourKey")
+    var myStr = SUtils.getString(yourJson, "yourKey")
 
     //check key of value Integer is exits into json or not, if not return 0
-    var myInt = SUtils.checkKeyIntExits(yourJson, "yourKey")
+    var myInt = SUtils.getInt(yourJson, "yourKey")
+
+    //check key of value Long is exits into json or not, if not return 0
+    var myLong = SUtils.getLong(yourJson, "yourKey")
+
+    //check key of value Double is exits into json or not, if not return 0.0
+    var myDouble = SUtils.getDouble(yourJson, "yourKey")
 
     //check key of value BigDecimal is exits into json or not, if not return 0
-    var myBD = SUtils.checkKeyBigDecimalExits(yourJson, "yourKey")
+    var myBD = SUtils.getBigDecimal(yourJson, "yourKey")
 
     //check key of value Boolean is exits into json or not, if not return false
-    var isCheck = SUtils.checkKeyBooleanExits(yourJson, "yourKey")
+    var isCheck = SUtils.getBoolean(yourJson, "yourKey")
 
     //check special key of value String is exits into json or not, if not return special value
-    var myStr =  SUtils.checkKeySpecialStringtExits(yourJson, "yourKey", "yourSpecialValue")
+    var myStr =  SUtils.getSpecialString(yourJson, "yourKey", "yourSpecialValue")
    
     //check special key of value Integer is exits into json or not, if not return special value
-    var myInt =  SUtils.checkKeySpecialIntExits(yourJson, "yourKey", 999)
+    var myInt =  SUtils.getSpecialInt(yourJson, "yourKey", 999)
+
+    //check special key of value Long is exits into json or not, if not return special value
+    var myLong =  SUtils.getSpecialLong(yourJson, "yourKey", 999)
+
+    /check special key of value Double is exits into json or not, if not return special value
+    var myDouble =  SUtils.getSpecialDouble(yourJson, "yourKey", 999.9)
 
     //check special key of value BigDecimal is exits into json or not, if not return special value
-    var myBC =  SUtils.checkKeySpecialBigDecimalExits(yourJson, "yourKey", BigDecimal("999"))
+    var myBC =  SUtils.getSpecialBigDecimal(yourJson, "yourKey", BigDecimal("999"))
 
     //check special key of value Boolean is exits into json or not, iif not return special value
-    var isCheck =  SUtils.checkKeyBooleanExits(yourJson, "yourKey", true)
+    var isCheck =  SUtils.getSpecialBoolean(yourJson, "yourKey", true)
  
  
 //FacebookHelper--------------------------------------------------------------------------
@@ -198,10 +210,15 @@ class MainActivity : AppCompatActivity() {
     var timeLocal = SUtils.convertMonthDayLocaleString(this, "vi" , 12, 31)
 
 
-//OtherHelper-----------------------------------------------------------------------------
+//NumberHelper-----------------------------------------------------------------------------
     //format BigDecimal to currency
-    var strFormated = SUtils.formatBigDecimalToCurrency(BigDecimal("10000000"))
-    
+    var strBDFormat = SUtils.formatBigDecimalToCurrency(BigDecimal("10000000"))
+
+    //format Int to currency
+    var strIntFormat = SUtils.formatIntToCurrency(1000000)
+
+    //format Long to currency
+    var strLongFormat = SUtils.formatLongToCurrency(1000000000)
 ```
 
 

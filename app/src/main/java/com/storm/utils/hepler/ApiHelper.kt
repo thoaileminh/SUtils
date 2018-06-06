@@ -18,7 +18,7 @@ class ApiHelper {
         /**
          * check key of value String is exits into json or not, if not return null
          */
-        fun checkKeyStringExits(json: JSONObject, key: String): String {
+        fun getString(json: JSONObject, key: String): String {
             if (!json.isNull(key))
                 return json.getString(key)
             return ""
@@ -27,7 +27,7 @@ class ApiHelper {
         /**
          * check key of value Integer is exits into json or not, if not return 0
          */
-        fun checkKeyIntExits(json: JSONObject, key: String): Int {
+        fun getInt(json: JSONObject, key: String): Int {
             if (!json.isNull(key))
                 return json.getInt(key)
             return 0
@@ -36,16 +36,16 @@ class ApiHelper {
         /**
          * check key of value Long is exits into json or not, if not return 0
          */
-        fun checkKeyLongExits(json: JSONObject, key: String): Long {
+        fun getLong(json: JSONObject, key: String): Long {
             if (!json.isNull(key))
                 return json.getLong(key)
             return 0
         }
 
         /**
-         * check key of value Double is exits into json or not, if not return 0
+         * check key of value Double is exits into json or not, if not return 0.0
          */
-        fun checkKeyDoubleExits(json: JSONObject, key: String): Double {
+        fun getDouble(json: JSONObject, key: String): Double {
             if (!json.isNull(key))
                 return json.getDouble(key)
             return 0.0
@@ -54,7 +54,7 @@ class ApiHelper {
         /**
          * check key of value BigDecimal is exits into json or not, if not return 0
          */
-        fun checkKeyBigDecimalExits(json: JSONObject, key: String): BigDecimal {
+        fun getBigDecimal(json: JSONObject, key: String): BigDecimal {
             if (!json.isNull(key))
                 return BigDecimal(json.getString(key))
             return BigDecimal.ZERO
@@ -63,7 +63,7 @@ class ApiHelper {
         /**
          *check key of value Boolean is exits into json or not, if not return false
          */
-        fun checkKeyBooleanExits(json: JSONObject, key: String): Boolean {
+        fun getBoolean(json: JSONObject, key: String): Boolean {
             if (!json.isNull(key))
                 return json.getBoolean(key)
             return false
@@ -72,7 +72,7 @@ class ApiHelper {
         /**
          *check special key of value String is exits into json or not, if not return special value
          */
-        fun checkKeySpecialStringExits(json: JSONObject, key: String, specialValue: String): String {
+        fun getSpecialString(json: JSONObject, key: String, specialValue: String): String {
             if (!json.isNull(key))
                 return json.getString(key)
             return specialValue
@@ -81,16 +81,34 @@ class ApiHelper {
         /**
          *check special key of value Integer is exits into json or not, if not return special value
          */
-        fun checkKeySpecialIntExits(json: JSONObject, key: String, specialValue: Int): Int {
+        fun getSpecialInt(json: JSONObject, key: String, specialValue: Int): Int {
             if (!json.isNull(key))
                 return json.getInt(key)
             return specialValue
         }
 
         /**
+         *check special key of value Long is exits into json or not, if not return special value
+         */
+        fun getSpecialLong(json: JSONObject, key: String, specialValue: Long): Long {
+            if (!json.isNull(key))
+                return json.getLong(key)
+            return specialValue
+        }
+
+        /**
+         *check special key of value Double is exits into json or not, if not return special value
+         */
+        fun getSpecialDouble(json: JSONObject, key: String, specialValue: Double): Double {
+            if (!json.isNull(key))
+                return json.getDouble(key)
+            return specialValue
+        }
+
+        /**
          *check special key of value BigDecimal is exits into json or not, if not return special value
          */
-        fun checkKeySpecialBigDecimalExits(json: JSONObject, key: String, specialValue: BigDecimal): BigDecimal {
+        fun getSpecialBigDecimal(json: JSONObject, key: String, specialValue: BigDecimal): BigDecimal {
             if (!json.isNull(key))
                 return BigDecimal(json.getString(key))
             return specialValue
@@ -99,7 +117,7 @@ class ApiHelper {
         /**
          *check special key of value Boolean is exits into json or not, iif not return special value
          */
-        fun checkKeyBooleanExits(json: JSONObject, key: String, specialValue: Boolean): Boolean {
+        fun getSpecialBoolean(json: JSONObject, key: String, specialValue: Boolean): Boolean {
             if (!json.isNull(key))
                 return json.getBoolean(key)
             return specialValue
